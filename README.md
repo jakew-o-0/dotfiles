@@ -1,5 +1,4 @@
 # My Dotfiles
-
 Contains configuration files and install scripts for my system
 
 
@@ -11,7 +10,6 @@ $ pacman -S git stow
 
 
 ## Installation
-
 Clone repo to $HOME
 ```
 $ git clone https://github.com/jakew-o-0/dotfiles.git
