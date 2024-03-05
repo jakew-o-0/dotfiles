@@ -9,6 +9,7 @@ $ pacman -S git stow
 ```
 
 
+
 ## Installation
 Clone repo to $HOME
 ```
@@ -16,11 +17,14 @@ $ git clone https://github.com/jakew-o-0/dotfiles.git
 $ cd dotfiles
 ```
 
+
+
 ### Manual
 Use GNU stow to create simlinks
 ```
 $ stow .
 ```
+
 
 ### Install Scripts
 Install Desktop
@@ -34,6 +38,7 @@ Packages installed
 - rofi-lbonn-wayland
 - kitty
 - ttf-martian-mono-nerd
+
 
 Install Workstation:
 ```
