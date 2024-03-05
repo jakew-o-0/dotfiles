@@ -14,4 +14,6 @@ yay -S --noconfirm mold pigz pbzip2 lbzip2 plzip
 mv ~/linux_configs/arch-sys-config/makepkg.conf /etc/makepkg.conf
 
 # installing packages
-yay -S --noconfirm hyprland hyprpaper rofi-wayland-only-git kitty ttf-martian-mono-nerd
+yay -S --noconfirm hyprland hyprpaper rofi-lbonn-wayland kitty ttf-martian-mono-nerd
+
+source ./scripts/Workstation-install.sh

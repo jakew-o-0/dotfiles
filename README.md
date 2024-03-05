@@ -24,9 +24,26 @@ Use GNU stow to create simlinks
 $ stow .
 ```
 
-### Install Stcript
+### Install Scripts
+Install Desktop:
 ```
-$ ./scripts/InstallWorkflow.sh
-$ ./scripts/InstallDesktop.sh
+$ ./scripts/desktop-install.sh
 ```
+Packages installed:
+    - yay
+    - hyprland
+    - hyprpapr
+    - rofi-lbonn-wayland
+    - kitty
+    - ttf-martian-mono-nerd
 
+Install Workstation:
+```
+$ ./scripts/workstation-install.sh
+```
+Packages installed:
+    - neovim
+    - tmux 
+    - zsh
+    - starship
+    - fzf
