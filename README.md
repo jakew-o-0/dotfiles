@@ -23,12 +23,12 @@ $ stow .
 ```
 
 ### Install Scripts
-Install Desktop:
+Install Desktop
 ```
 $ ./scripts/desktop-install.sh
 ```
-Packages installed:
-* yay
+Packages installed
+- yay
 - hyprland
 - hyprpapr
 - rofi-lbonn-wayland
