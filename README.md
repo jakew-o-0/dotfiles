@@ -13,7 +13,7 @@ $ pacman -S git stow
 
 ## Manual Installation
 Clone repo to $HOME and using GNU stow to simlink them
-```
+```bash
 $ git clone https://github.com/jakew-o-0/dotfiles.git
 $ cd dotfiles
 $ stow .
