@@ -28,7 +28,7 @@ Install Desktop:
 $ ./scripts/desktop-install.sh
 ```
 Packages installed:
-- yay
+* yay
 - hyprland
 - hyprpapr
 - rofi-lbonn-wayland
