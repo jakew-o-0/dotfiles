@@ -1,0 +1,6 @@
+scripts
+pacman-mkpkg-config
+
+\.git
+\.gitignore
+^/README.*
