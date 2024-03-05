@@ -5,7 +5,7 @@ Contains configuration files and install scripts for my system
 
 ## Requirements
 Install the following or use the install scripts
-```
+```bash
 $ pacman -S git stow
 ```
 
@@ -13,7 +13,7 @@ $ pacman -S git stow
 
 ## Manual Installation
 Clone repo to $HOME and using GNU stow to simlink them
-```zsh
+```bash
 $ git clone https://github.com/jakew-o-0/dotfiles.git
 $ cd dotfiles
 $ stow .
@@ -22,7 +22,7 @@ $ stow .
 
 ## Install Script Installation
 ### Install Desktop
-```
+```bash
 $ ./scripts/desktop-install.sh
 ```
 Packages installed
@@ -35,7 +35,7 @@ Packages installed
 
 
 ### Install Workstation:
-```
+```bash
 $ ./scripts/workstation-install.sh
 ```
 Packages installed:
