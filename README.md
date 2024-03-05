@@ -30,20 +30,20 @@ Install Desktop:
 $ ./scripts/desktop-install.sh
 ```
 Packages installed:
-    - yay
-    - hyprland
-    - hyprpapr
-    - rofi-lbonn-wayland
-    - kitty
-    - ttf-martian-mono-nerd
+- yay
+- hyprland
+- hyprpapr
+- rofi-lbonn-wayland
+- kitty
+- ttf-martian-mono-nerd
 
 Install Workstation:
 ```
 $ ./scripts/workstation-install.sh
 ```
 Packages installed:
-    - neovim
-    - tmux 
-    - zsh
-    - starship
-    - fzf
+- neovim
+- tmux 
+- zsh
+- starship
+- fzf
