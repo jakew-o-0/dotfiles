@@ -14,14 +14,15 @@ $ pacman -S git stow
 ## Manual Installation
 Clone repo to $HOME and using GNU stow to simlink them
 ```bash
-$ git clone https://github.com/jakew-o-0/dotfiles.git
-$ cd dotfiles
-$ stow .
+git clone https://github.com/jakew-o-0/dotfiles.git
+cd dotfiles
+stow .
 ```
 
 
 ## Install Script Installation
 ```bash
+git clone https://github.com/jakew-o-0/dotfiles.git
 chmod +x ~/dotfiles/scripts/system-setup.sh
 ~/dotfiles/scripts/system-setip.sh 
 ```
