@@ -21,21 +21,9 @@ $ stow .
 
 
 ## Install Script Installation
-```bash
-chmod +x ~/dotfiles/scripts/system-setup.sh
-~/dotfiles/scripts/system-setip.sh 
-```
 ### Packages Installed
 Deps:
 - yay
-
-Mkpkg config deps:
-- mold
-- pigs
-- pigz
-- pbzip2
-- plzip
-- lbzip2
 
 Desktop:
 - hyprland
