@@ -51,3 +51,4 @@ Workstation:
 - zsh
 - starship
 - fzf
+- stow
