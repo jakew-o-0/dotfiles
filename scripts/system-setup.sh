@@ -29,7 +29,7 @@ if [[ $installDesktop -eq "y" ]]; then
 fi
 
 if [[ $installWorkstation -eq "y" ]]; then
-    yay -S --noconfirm neovim tmux zsh starship fzf
+    yay -S --noconfirm neovim tmux zsh starship fzf stow
     chsh -s /usr/bin/zsh jake
 
     # oh-my-zsh
