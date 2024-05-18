@@ -1,15 +1,5 @@
 # Dotfiles
 Contains configuration files and install scripts for my system
-
-## Manual Installation
-Clone repo to $HOME and using GNU stow to simlink them
-```bash
-pacman -S git stow
-git clone https://github.com/jakew-o-0/dotfiles.git
-cd dotfiles
-stow .
-```
-
 ## Install Script Installation
 ```bash
 git clone https://github.com/jakew-o-0/dotfiles.git
