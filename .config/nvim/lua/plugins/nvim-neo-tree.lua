@@ -16,10 +16,5 @@ return {
     },
   },
 
-  vim.api.nvim_set_keymap(
-    "n",
-    "<space>fe",
-    ":Neotree <CR>",
-    { noremap = true }
-  )
+  vim.api.nvim_set_keymap( "n", "<space>ff", ":Neotree <CR>", { noremap = true })
 }

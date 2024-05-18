@@ -19,10 +19,10 @@ return {
 	    incremental_selection = {
 	      enable = true,
 	      keymaps = {
-		init_selection = '<c-space>',
+		init_selection = '<c-s>',
 		scope_incremental = '<a-s>',
-		node_decremental = '<M-space>',
-		node_incremental = '<c-pace>',
+		node_decremental = '<M-s>',
+		node_incremental = '<c-s>',
 	      },
 	    },
 	    textobjects = {
@@ -43,20 +43,20 @@ return {
 		enable = true,
 		set_jumps = true, -- whether to set jumps in the jumplist
 		goto_next_start = {
-		  [']m'] = '@function.outer',
-		  [']]'] = '@class.outer',
+		  ['<leader>fn'] = '@function.outer',
+		  ['<leader>cn'] = '@class.outer',
 		},
 		goto_next_end = {
-		  [']M'] = '@function.outer',
-		  [']['] = '@class.outer',
+		  ['<leader>fe'] = '@function.outer',
+		  ['<leader>ce'] = '@class.outer',
 		},
 		goto_previous_start = {
-		  ['[m'] = '@function.outer',
-		  ['[['] = '@class.outer',
+		  ['<leader>fp'] = '@function.outer',
+		  ['<leader>cp'] = '@class.outer',
 		},
 		goto_previous_end = {
-		  ['[M'] = '@function.outer',
-		  ['[]'] = '@class.outer',
+		  ['<leader>fpe'] = '@function.outer',
+		  ['<leader>cpe'] = '@class.outer',
 		},
 	      },
 	      swap = {
@@ -71,9 +71,6 @@ return {
 	    },
 	  }
 	end, 0)
-	
-
-
 	end,
 }
 

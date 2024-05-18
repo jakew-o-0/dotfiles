@@ -21,6 +21,7 @@ vim.o.updatetime = 250
 vim.o.timeoutlen = 300
 vim.o.completeopt = 'menuone,noselect'
 vim.o.termguicolors = true
+vim.o.relativenumber = true
 
 vim.o.foldmethod = 'marker'
 
