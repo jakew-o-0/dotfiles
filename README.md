@@ -18,22 +18,16 @@ chmod +x ~/dotfiles/scripts/system-setup.sh
 ```
 ### Packages Installed
 - yay
-
-Mkpkg config deps:
 - mold
 - pigz
 - pbzip2
 - plzip
 - lbzip2
-
-Desktop:
 - hyprland
 - hyprpapr
 - rofi-lbonn-wayland
 - kitty
 - ttf-martian-mono-nerd
-
-Workstation:
 - neovim && lazy && plugins
 - tmux && tpm && plugins
 - zsh  && zinit && plugins
