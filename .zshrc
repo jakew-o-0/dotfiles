@@ -26,8 +26,6 @@ zinit light-mode for \
     zdharma-continuum/zinit-annex-rust
 
 ### End of Zinit's installer chunk
-
-
 ### plugins ###
 zinit ice depth=1; zinit light romkatv/powerlevel10k
 zinit light zsh-users/zsh-syntax-highlighting
@@ -35,13 +33,7 @@ zinit light zsh-users/zsh-completions
 zinit light Aloxaf/fzf-tab
 
 
-
-# autoload completions
-autoload -U compinit && compinit
-
-
-
-### zsh history conf ###
+### zsh history ###
 HISTSIZE=5000
 HISTFILE=~/.zsh_history
 SAVEHIST=$HISTSIZE
@@ -53,21 +45,16 @@ setopt hist_ignore_all_dups
 setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
-
-
-
-### zsh conf ###
+### zsh ###
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
+# autoload completions
+autoload -U compinit && compinit
 bindkey -v
-
-
-
 ### fzf ###
 eval "$(fzf --zsh)"
 export FZF_DEFAULT_OPTS='--height 20%'
-
 
 
 ### commands ###
@@ -77,7 +64,6 @@ function yac() {
         fzf --multi --preview 'yay -Si {1}' |
         xargs -ro yay $2
     }
-
     if [[ $1 == "-S" ]]; then
         yayCommand -Slq -Syu
     fi
@@ -95,18 +81,12 @@ function v() {
     nvim .
 }
 
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 
 ### aliases ###
 alias ls="ls -l --color"
 alias la="ls -a"
-
-
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-
-
 ### env ###
 export PATH="/home/jake/.cargo/bin:$PATH"
