@@ -24,6 +24,7 @@ return {
 	file_ignore_patterns = {
 	  "node_modules",
 	  "__pycache__",
+	  "zig-cache",
 	},
 	preview = {
 	  hide_on_startup = true,
