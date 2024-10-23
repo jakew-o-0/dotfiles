@@ -8,19 +8,26 @@ chmod +x ~/dotfiles/scripts/system-setup.sh
 ```
 ### Packages Installed
 - yay
+
+- JetBrainsMono Nerd Font
+- bibata-cursor-theme
+- papirus-icon-theme
+
+- hyprland && hyprpapr
+- rofi-lbonn-wayland
+- kitty
+- neovim && lazy && plugins
+- tmux && tpm && plugins
+- zsh  && zinit && plugins
+- fzf
+
+- ripgrep
+- stow
+
+### Removed Packages
 - mold
 - pigz
 - pbzip2
 - plzip
 - lbzip2
-- hyprland
-- hyprpapr
-- rofi-lbonn-wayland
-- kitty
-- ttf-martian-mono-nerd
-- neovim && lazy && plugins
-- tmux && tpm && plugins
-- zsh  && zinit && plugins
-- fzf
-- ripgrep
-- stow
+

@@ -6,7 +6,7 @@
     txt: #dcd7ba;
     bordr: #dcd7bacc;
 
-	background-color: @bgAlt;
+	background-color: @bg;
 }
 
 
@@ -14,15 +14,14 @@ configuration {
 	show-icons: true;
     icon-theme: "Papirus";
 	location: 0;
-	font: "MartianMonoNF 14";	
+	font: "JetBrainsMono Nerd Font 12";	
 	display-drun: "Launch:";
 }
 
 window { 
-	width: 30%;
+	width: 400px;
 	transparency: "real";
 	orientation: vertical;
-
 	border-color: @bordr;
     border: 2;
     border-radius: 5;
@@ -43,11 +42,11 @@ element {
 }
 
 element selected {
-	background-color: @bgAlt;
+	background-color: @bg;
     text-color: @txt;
 	border-color: @bordr;
-    border: 1;
-    border-radius: 5;
+    border: 2;
+    border-radius: 3;
 }
 
 element-text {
@@ -63,11 +62,9 @@ element-icon {
 }
 
 listview {
-	columns: 2;
 	lines: 9;
 	padding: 8 0;
 	fixed-height: true;
-	fixed-columns: true;
 	fixed-lines: true;
 	border: 0 10 6 10;
 }
