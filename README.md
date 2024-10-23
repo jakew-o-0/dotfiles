@@ -23,6 +23,10 @@ chmod +x ~/dotfiles/scripts/system-setup.sh
 
 - ripgrep
 - stow
+- eza
+- dust
+- duff
+- bat
 
 ### Removed Packages
 - mold

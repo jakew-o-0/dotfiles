@@ -14,7 +14,7 @@ cd ~
 # sudo mv ~/.dotfiles/arch-sys-config/makepkg.conf /etc/makepkg.conf
 
 # install system 
-yay -S --noconfirm hyprland hyprpaper rofi-lbonn-wayland kitty ttf-jetbrains-mono-nerd papirus-icon-theme bibata-cursor-theme-bin neovim tmux zsh fzf ripgrep stow eza dust duf 
+yay -S --noconfirm hyprland hyprpaper rofi-lbonn-wayland kitty ttf-jetbrains-mono-nerd papirus-icon-theme bibata-cursor-theme-bin neovim tmux zsh fzf ripgrep stow eza dust duf bat
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 chsh -s /usr/bin/zsh jake
 cd ~/.dotfiles
