@@ -14,7 +14,7 @@ configuration {
 	show-icons: true;
     icon-theme: "Papirus";
 	location: 0;
-	font: "JetBrainsMono Nerd Font 12";	
+	font: "JetBrainsMono Nerd Font 10";	
 	display-drun: "Launch:";
 }
 
@@ -55,7 +55,7 @@ element-text {
 }
 
 element-icon {
-	size: 32px;
+	size: 24px;
 	background-color: inherit;
 	padding: 0 6 0 0;
 	alignment: vertical;
