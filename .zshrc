@@ -86,7 +86,7 @@ function v() {
 
 
 ### aliases ###
-alias ls="eza -lhg --git --icons=auto --color=always --group-directories-first"
+alias ls="eza -lhg --git --icons=auto --color=auto --group-directories-first"
 alias la="ls -a"
 ### env ###
 export PATH="/home/jake/.cargo/bin:$PATH"
