@@ -1,10 +1,10 @@
 @theme "/dev/null"
 
 * {
-	bg: #161621cc;
+	bg: #161617;
 	bgAlt: #1f1f28cc;
-    txt: #dcd7ba;
-    bordr: #dcd7bacc;
+    txt: #c9c7cd;
+    bordr: #aca1cf;
 
 	background-color: @bg;
 }
@@ -23,8 +23,7 @@ window {
 	transparency: "real";
 	orientation: vertical;
 	border-color: @bordr;
-    border: 2;
-    border-radius: 5;
+    border-radius: 3;
 }
 
 mainbox {
@@ -45,7 +44,7 @@ element selected {
 	background-color: @bg;
     text-color: @txt;
 	border-color: @bordr;
-    border: 2;
+    border: 1;
     border-radius: 3;
 }
 
@@ -81,7 +80,7 @@ entry {
 
 
 prompt {
-	text-color: #98bb6c;
+	text-color: #aca1cf;
     background-color: @bg;
 	padding: 4 6 4 4;
 	margin: 10 -2 0 8;

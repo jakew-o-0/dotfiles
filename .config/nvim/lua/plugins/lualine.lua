@@ -1,23 +1,10 @@
 return {
 	'nvim-lualine/lualine.nvim',
 	config = function ()
-		local colours = {
-			default_bg = '#16161D',
-
-			section_primary_bg = '#658594',
-			section_primary_fg = '#16161D',
-			section_secondary_fg = '#C8C093',
-		}
-		local kanagawa = {
-			normal = {
-				a = {bg = colours.section_primary_bg, fg = colours.section_primary_fg, gui='bold'},
-				b = {bg = colours.default_bg, fg = colours.section_secondary_fg},
-			},
-		}
 		require('lualine').setup {
 			options = {
 				icons_enabled = true,
-				theme = kanagawa,
+				theme = 'mellow',
 				component_separators = { left = '', right = ''},
 				section_separators = { left = '', right = ''},
 				disabled_filetypes = {
