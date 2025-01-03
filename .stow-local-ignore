@@ -1,5 +1,6 @@
 scripts
-pacman-mkpkg-config
+pacman-makepkg-config
+wallpapers
 
 \.git
 \.gitignore

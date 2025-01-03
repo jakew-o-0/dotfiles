@@ -75,10 +75,14 @@ function yac() {
     fi
 }
 
-function v() {
+function cs() {
     cd ~
     cd $(find . -type d | fzf )
-    nvim .
+    tmux
+}
+
+function as() {
+    tmux attach $(tmux list-sessions | fzf)
 }
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
