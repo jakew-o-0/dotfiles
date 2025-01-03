@@ -88,5 +88,11 @@ function v() {
 ### aliases ###
 alias ls="eza -lhg --git --icons=auto --color=auto --group-directories-first"
 alias la="ls -a"
+alias wintermute="ssh jake2.bailey@live.uwe.ac.uk@csctcloud.uwe.ac.uk"
+alias wintermute-fs="sshfs jake2.bailey@live.uwe.ac.uk@csctcloud.uwe.ac.uk:/home/jak2.bailey ~/Mnt -C -o reconnect,auto_cache -ocypher=chacha20-poly1305@openssh.com"
+alias wintermute-syncd="rsync -avP jake2.bailey@live.uwe.ac.uk@csctcloud.uwe.ac.uk:/home/jake2.bailey ~/Remote/"
+alias wintermute-syncu="rsync -avP ~/Remote/jake2.bailey jake2.bailey@live.uwe.ac.uk@csctcloud.uwe.ac.uk:/home/"
+alias wintermute-db="ssh -L 3306:127.0.0.1:3306 -N -f jake2.bailey@live.uwe.ac.uk@csctcloud.uwe.ac.uk"
+
 ### env ###
 export PATH="/home/jake/.cargo/bin:$PATH"
