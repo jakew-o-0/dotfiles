@@ -30,6 +30,11 @@ return {
 	  hide_on_startup = true,
 	},
       },
+      pickers = {
+	find_files = {
+	  hidden = true,
+	},
+      },
     }
 
     -- Enable telescope fzf native, if installed
