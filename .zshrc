@@ -58,31 +58,28 @@ export FZF_DEFAULT_OPTS='--height 20%'
 
 
 ### commands ###
-function yac() {
-    local yayCommand() {
-        yay $1 |
-        fzf --multi --preview 'yay -Si {1}' |
-        xargs -ro yay $2
-    }
-    if [[ $1 == "-S" ]]; then
-        yayCommand -Slq -Syu
-    fi
-    if [[ $1 == "-R" ]]; then
-        yayCommand -Qeq -Rcns
-    fi
-    if [[ $1 == "-Ra" ]]; then
-        yayCommand -Qsq -Rcns
-    fi
+function yays() {
+    yay -Slq |
+    fzf --multi --preview 'yay -Si {1}' |
+    xargs -ro yay -syu
 }
-
-function cs() {
-    cd ~
-    cd $(find . -type d | fzf )
-    tmux
+function yayr() {
+    yay -Qeq |
+    fzf --multi --preview 'yay -Si {1}' |
+    xargs -ro yay -Rcns
+}
+function yayra() {
+    yay -Qsq |
+    fzf --multi --preview 'yay -Si {1}' |
+    xargs -ro yay -Rcns
 }
 
 function as() {
-    tmux attach $(tmux list-sessions | fzf)
+    tmux attach -t$(tmux list-sessions -F\#S | fzf)
+}
+function ns() {
+    tmux new -d -c $(find ~/. -type d | fzf )
+    as
 }
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
