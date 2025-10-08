@@ -77,8 +77,11 @@ function yayra() {
 function as() {
     tmux attach -t$(tmux list-sessions -F\#S | fzf)
 }
+function cs() {
+    tmux new -d -c $(find ~/. -type d | fzf ) -s ${1}
+}
 function ns() {
-    tmux new -d -c $(find ~/. -type d | fzf )
+    cs ${1}
     as
 }
 
@@ -91,8 +94,8 @@ alias ls="eza -lhg --git --icons=auto --color=auto --group-directories-first"
 alias la="ls -a"
 alias wintermute="ssh jake2.bailey@live.uwe.ac.uk@csctcloud.uwe.ac.uk"
 alias wintermute-fs="sshfs jake2.bailey@live.uwe.ac.uk@csctcloud.uwe.ac.uk:/home/jak2.bailey ~/Mnt -C -o reconnect,auto_cache -ocypher=chacha20-poly1305@openssh.com"
-alias wintermute-syncd="rsync -avP jake2.bailey@live.uwe.ac.uk@csctcloud.uwe.ac.uk:/home/jake2.bailey ~/Remote/"
-alias wintermute-syncu="rsync -avP ~/Remote/jake2.bailey jake2.bailey@live.uwe.ac.uk@csctcloud.uwe.ac.uk:/home/"
+alias wintermute-syncd="rsync -avP jake2.bailey@live.uwe.ac.uk@csctcloud.uwe.ac.uk:/home/jake2.bailey ~/Remote/ --exclude='.*'"
+alias wintermute-syncu="rsync -avP ~/Remote/jake2.bailey jake2.bailey@live.uwe.ac.uk@csctcloud.uwe.ac.uk:/home/ --exclude='.*'"
 alias wintermute-db="ssh -L 3306:127.0.0.1:3306 -N -f jake2.bailey@live.uwe.ac.uk@csctcloud.uwe.ac.uk"
 
 ### env ###
